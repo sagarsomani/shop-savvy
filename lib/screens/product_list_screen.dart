@@ -8,9 +8,10 @@ import 'package:shopsavvy/widgets/product_card.dart';
 class ProductListScreen extends StatefulWidget {
   final VoidCallback onUpdate;
 
-  ProductListScreen({required this.onUpdate});
+  const ProductListScreen({super.key, required this.onUpdate});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ProductListScreenState createState() => _ProductListScreenState();
 }
 

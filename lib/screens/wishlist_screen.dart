@@ -54,11 +54,13 @@ class _WishlistScreenState extends State<WishlistScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
+        iconTheme: IconThemeData(color: Colors.white),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: Theme.of(context).primaryColor),
+          icon: Icon(Icons.arrow_back_ios_new_outlined,),
           onPressed: () => Navigator.pop(context),
         ),
-        title: Text('Your Wishlist',style: TextStyle(color:Theme.of(context).primaryColor,fontWeight: FontWeight.bold),),
+        title: Text('Your Wishlist',style: TextStyle(color:Colors.white),),
       ),
       body: _isLoading
           ? Center(child: CircularProgressIndicator())

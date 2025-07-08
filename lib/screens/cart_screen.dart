@@ -95,11 +95,13 @@ class _CartScreenState extends State<CartScreen> {
     
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: theme.primaryColor,
+        iconTheme: IconThemeData(color: Colors.white),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_new_outlined, color: Theme.of(context).primaryColor),
+          icon: Icon(Icons.arrow_back_ios_new_outlined,  color: Colors.white),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text('Your Cart', style: TextStyle(color:Color.fromARGB(180, 59, 34, 126), fontWeight: FontWeight.bold),),
+        title: const Text('Your Cart', style: TextStyle(color:Colors.white, fontWeight: FontWeight.bold),),
         actions: [
           if (_cartItems.isNotEmpty)
             IconButton(
@@ -206,12 +208,13 @@ class _CartScreenState extends State<CartScreen> {
             child: ElevatedButton(
               onPressed: _checkout,
               style: ElevatedButton.styleFrom(
+                backgroundColor: theme.primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(11),
                 ),
               ),
-              child: const Text('Proceed to Checkout'),
+              child: const Text('Proceed to Checkout', style: TextStyle(color: Colors.white),),
             ),
           ),
         ],

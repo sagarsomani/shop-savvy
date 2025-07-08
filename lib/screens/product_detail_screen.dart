@@ -56,7 +56,13 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.product.title!),
+        backgroundColor: Theme.of(context).primaryColor ,
+        iconTheme: IconThemeData(color: Colors.white),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ) ,
+        title: Text(widget.product.title!, style: TextStyle(color: Colors.white),),
         actions: [
           IconButton(
             icon: Icon(
@@ -201,8 +207,12 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   onPressed: _addToCart,
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(vertical: 16),
+                    backgroundColor: Theme.of(context).primaryColor,
+                    shape: RoundedRectangleBorder(  
+                      borderRadius: BorderRadius.circular(11),
+                    ),
                   ),
-                  child: Text('Add to Cart'),
+                  child: Text('Add to Cart', style: TextStyle(color: Colors.white),),
                 ),
               ),
             ],

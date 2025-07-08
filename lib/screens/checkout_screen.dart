@@ -16,7 +16,13 @@ class CheckoutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Checkout'),
+        backgroundColor: Theme.of(context).primaryColor,
+        iconTheme: IconThemeData(color: Colors.white),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_new_outlined, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: Text('Checkout', style: TextStyle(color: Colors.white),),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -70,7 +76,7 @@ class CheckoutScreen extends StatelessWidget {
             SizedBox(height: 24),
             Text(
               'Shipping Information',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Theme.of(context).primaryColor),
             ),
             SizedBox(height: 16),
             TextFormField(
@@ -124,9 +130,10 @@ class CheckoutScreen extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).primaryColor,
                   padding: EdgeInsets.symmetric(vertical: 16),
                 ),
-                child: Text('Place Order'),
+                child: Text('Place Order', style: TextStyle(color: Colors.white),),
               ),
             ),
           ],
