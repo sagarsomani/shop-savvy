@@ -1,4 +1,4 @@
-# 🚀 ShopSavvy - Your Ultimate Shopping Companion
+# 🚀 ShopSavvy with APi integration complete frontend 
 
 ![image](https://github.com/user-attachments/assets/40a3ef13-5d55-4d96-a702-9c7442d9de56)
 
