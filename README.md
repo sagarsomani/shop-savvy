@@ -35,7 +35,7 @@ Quick-add to cart
 ![image](https://github.com/user-attachments/assets/88e16d4c-e8d1-425a-9198-04faa3a1d03c)
 ## search laptop
 ![image](https://github.com/user-attachments/assets/9c293158-9f12-4783-a9fe-01ce9920e903)
-## searh for bike
+## search for bike
 ![image](https://github.com/user-attachments/assets/5b47ffb2-ec3e-4988-a51d-35f6673d5a14)
 
 ## 4. . Product Details
